@@ -1,0 +1,65 @@
+{
+  "name": "Challenge",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Name of the challenge"
+    },
+    "description": {
+      "type": "string",
+      "description": "Details about the challenge"
+    },
+    "dimension": {
+      "type": "string",
+      "enum": [
+        "fitness",
+        "mindset",
+        "social",
+        "career",
+        "skills",
+        "lifestyle",
+        "any"
+      ],
+      "description": "The dimension this challenge focuses on"
+    },
+    "goal": {
+      "type": "number",
+      "description": "The target number to complete the challenge (e.g., 10 activities)"
+    },
+    "unit": {
+      "type": "string",
+      "enum": [
+        "activities",
+        "points"
+      ],
+      "default": "activities",
+      "description": "What is being counted towards the goal"
+    },
+    "reward_points": {
+      "type": "number",
+      "description": "Points awarded upon completion"
+    },
+    "badge_icon": {
+      "type": "string",
+      "description": "Icon for the reward badge"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "dimension",
+    "goal",
+    "reward_points",
+    "start_date",
+    "end_date"
+  ]
+}

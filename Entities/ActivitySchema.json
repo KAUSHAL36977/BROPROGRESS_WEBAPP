@@ -1,0 +1,43 @@
+{
+  "name": "Activity",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Activity name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "fitness",
+        "mindset",
+        "social",
+        "career",
+        "skills",
+        "lifestyle"
+      ],
+      "description": "Life dimension category"
+    },
+    "impact_score": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Impact rating 1-10"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Activity date"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "impact_score",
+    "date"
+  ]
+}

@@ -1,0 +1,19 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000000"/>
+  
+  <!-- Main progress circle -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffffff" stroke-width="20"/>
+  
+  <!-- Progress arc (80% complete) -->
+  <path d="M 256 76 A 180 180 0 1 1 256 436" fill="none" stroke="#00ff00" stroke-width="20" stroke-linecap="round" stroke-dasharray="904" stroke-dashoffset="180"/>
+  
+  <!-- Center dot -->
+  <circle cx="256" cy="256" r="40" fill="#ffffff"/>
+  
+  <!-- "B" letter in center -->
+  <path d="M 240 220 L 240 292 L 280 292 Q 300 292 300 272 Q 300 252 280 252 L 260 252 L 260 240 L 280 240 Q 300 240 300 220 Q 300 200 280 200 L 240 200 Z" fill="#000000"/>
+  
+  <!-- Neo-brutalist border -->
+  <rect x="16" y="16" width="480" height="480" fill="none" stroke="#ffffff" stroke-width="8"/>
+</svg> 

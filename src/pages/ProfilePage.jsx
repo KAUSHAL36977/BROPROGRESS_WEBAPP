@@ -74,7 +74,7 @@ const ProfilePage = ({ user, activities, achievements, updateUser }) => {
   };
 
   const clearAllData = () => {
-    if (confirm('Are you sure? This will permanently delete all your data and cannot be undone!')) {
+    if (window.confirm('Are you sure? This will permanently delete all your data and cannot be undone!')) {
       dataService.clearAllData();
       window.location.reload();
     }
